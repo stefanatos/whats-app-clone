@@ -1,0 +1,64 @@
+.createChat {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.createChat > h2 {
+    background-color: #ededed;
+    flex: 1;
+    padding: 20px;
+}
+.createChat > p {
+    padding: 10px;
+    font-weight: 500;
+    color: gray;
+}
+
+.createChat > input {
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+}
+.createChat__buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+
+.createChat__buttons > button {
+    padding: 10px;
+}
+
+.createChat__buttonCancel {
+    color: red;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 80%;
+    border: none;
+    border-bottom: 1px solid red;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.createChat__buttonSuccess {
+    color: green;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 80%;
+    border: none;
+    border-bottom: 1px solid green;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.createChat__buttonSuccess:hover, .createChat__buttonCancel:hover {
+    transform: scale(1.2);
+}
