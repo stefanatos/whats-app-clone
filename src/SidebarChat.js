@@ -26,6 +26,11 @@ const SidebarChat = ({ addNewChat, showBackdrop, id, name, description }) => {
         showBackdrop(true);
     };
 
+
+    const onDeleteRoom = () => {
+        db.collection('rooms').doc(id).delete().catch(e => alert(e));
+    }
+
     return !addNewChat ? (
         <Link to={`/rooms/${id}`}>
             <div className="sidebarchat">
@@ -37,6 +42,7 @@ const SidebarChat = ({ addNewChat, showBackdrop, id, name, description }) => {
                     <p className="sidebarchat__infoDescripion">{description}</p>
                     <p>{messages[0]?.message}</p>
                 </div>
+                <button className="sidebarchat__delete" onClick={onDeleteRoom}>x</button>
             </div>
         </Link>
     ) : (

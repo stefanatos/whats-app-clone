@@ -3,6 +3,7 @@
     padding: 20px;
     cursor: pointer;
     border-bottom: 1px solid #f6f6f6;
+    position: relative;
 }
 
 .sidebarchat:hover {
@@ -30,4 +31,25 @@
 a{
     text-decoration: none;
     color: black
+}
+
+.sidebarchat__delete {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    position: absolute;
+    left: 90%;
+    top: 10%;
+    border-radius: 50%;
+    border: none;
+    font-weight: 600;
+    background-color: red;
+    color: white;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+.sidebarchat__delete:hover{
+    background-color: white;
+    color: red;
+    border: 1px solid red;
 }
